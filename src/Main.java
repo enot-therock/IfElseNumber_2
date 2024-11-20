@@ -37,12 +37,13 @@ public class Main {
         System.out.println();
         System.out.println("task number 4");
         int deliveryDistance = 120;
+        int days = 1;
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней " + deliveryDistance);
+            System.out.println("Потребуется один день");
         } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
-            System.out.println("Потребуется дней " + deliveryDistance);
+            System.out.println("Потребуется 2 дня");
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется дней " + deliveryDistance);
+            System.out.println("Потребуется 3 дня");
         } else {
             System.out.println("Доставки нет");
         }

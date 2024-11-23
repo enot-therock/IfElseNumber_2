@@ -27,19 +27,24 @@ public class Main {
 
         System.out.println();
         System.out.println("task number 3");
-        int year = 2000;
+        int year = 2150;
         if (((year % 4) == 0) && (year >= 1584)) { // % == 0 - проверяем что год делится на 4 без остатка
-            System.out.println(year + " год является високосным");
-        } else if ((year % 400) == 0) {
-            System.out.println(year + " год является високосным");
+           if ((year % 100) == 0) {
+               if ((year % 400) == 0) {
+                   System.out.println(year + " год является високосным.");
+               } else {
+                   System.out.println(year + " год не является високоснымю");
+               }
+            } else {
+               System.out.println(year + " год не является високоснымю");
+           }
         } else {
-            System.out.println(year + " год не является високосным");
+            System.out.println(year + " год не является високоснымю");
         }
 
         System.out.println();
         System.out.println("task number 4");
         int deliveryDistance = 120;
-        int days = 1;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется один день");
         } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
